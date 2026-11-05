@@ -54,6 +54,10 @@ export const projects: Project[] = [
     ],
     links: [
       {
+        label: "Sandbox source",
+        url: "https://github.com/rishitpradhan-gif/world-garden",
+      },
+      {
         label: "My LinkedIn",
         url: "https://www.linkedin.com/in/rishit-pradhan-a49773352",
       },
@@ -102,6 +106,10 @@ export const projects: Project[] = [
         label: "Drip on LinkedIn",
         url: "https://www.linkedin.com/company/drip-tech/",
       },
+      {
+        label: "Signal demo source",
+        url: "https://github.com/rishitpradhan-gif/wearable-signal-lab",
+      },
     ],
   },
   {
@@ -138,6 +146,11 @@ export const projects: Project[] = [
         text: "Pause when you find a pattern you like and export it as a PNG. Everything runs locally in your browser; there is no upload or account. This is a creative simulation built for the portfolio, not a biological prediction or an external research project.",
       },
     ],
-    links: [],
+    links: [
+      {
+        label: "Source code",
+        url: "https://github.com/rishitpradhan-gif/morphogenesis-lab",
+      },
+    ],
   },
 ];

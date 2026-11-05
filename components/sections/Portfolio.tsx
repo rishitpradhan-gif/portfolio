@@ -157,7 +157,14 @@ export default function Portfolio() {
         <a href="#" aria-label="Back to top">
           <ArrowUpRight size={21} strokeWidth={1.2} />
         </a>
-        <span className="micro">Biology × Computation</span>
+        <a
+          className="micro"
+          href="https://github.com/rishitpradhan-gif/portfolio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Source on GitHub ↗
+        </a>
       </footer>
       <ProjectDialog
         index={project}

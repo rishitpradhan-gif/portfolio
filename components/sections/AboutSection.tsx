@@ -36,6 +36,14 @@ export default function AboutSection() {
               What I’m building
               <ArrowUpRight size={13} />
             </a>
+            <a
+              href="https://github.com/rishitpradhan-gif"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+              <ArrowUpRight size={13} />
+            </a>
             <a href={linkedInUrl} target="_blank" rel="noreferrer">
               LinkedIn
               <ArrowUpRight size={13} />
