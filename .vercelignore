@@ -1,0 +1,14 @@
+.git
+.next
+node_modules
+out
+.openai
+.agents
+.codex
+.env*
+scripts
+README.md
+AGENTS.md
+*.tsbuildinfo
+
+github-projects

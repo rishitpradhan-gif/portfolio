@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.vercel/
+.openai/
+.agents/
+.codex/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+github-projects/
+design/assets/
