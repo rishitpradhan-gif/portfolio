@@ -55,7 +55,7 @@ export default function Portfolio() {
               <br />
               Orbital mechanics, neural signals, and scientific software.
             </p>
-            <a className="hero-featured-project" href="/projects/parallax/"><span className="hero-featured-dot" /> Featured project <strong>Parallax</strong><ArrowUpRight size={15} /></a>
+            <a className="hero-featured-project" href="/projects/conforma/"><span className="hero-featured-dot" /> Featured project <strong>Conforma</strong><ArrowUpRight size={15} /></a>
           </div>
           <div className="specimen-caption" aria-hidden="true">
             <span>Fig. 01</span>

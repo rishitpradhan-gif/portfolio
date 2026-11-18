@@ -21,6 +21,63 @@ export type Project = {
 };
 export const projects: Project[] = [
 {
+  "slug": "conforma",
+  "name": "Conforma",
+  "category": "Interactive structural biology",
+  "summary": "One protein. Two shapes.",
+  "detail": "Turn a real molecular structure, compare two experimental conformations, and measure what changes. Conforma brings a reproducible structural comparison into an editorial, hands-on WebGL experience.",
+  "tech": "Protein structures · Rigid alignment · WebGL · Independent numerical checks",
+  "color": "#cf946e",
+  "kind": "pattern",
+  "example": false,
+  "image": "/images/conforma.webp",
+  "imageAlt": "Conforma working application: a real adenylate kinase structure rendered beside its editorial cover",
+  "imageCaption": "Actual Conforma application · published PDB coordinates, stylized atomic display",
+  "focus": [
+    "Published experimental structures",
+    "Core-versus-whole-chain alignment",
+    "Reproducible endpoint measurements"
+  ],
+  "story": [
+    {
+      "title": "Start with two real observations",
+      "text": "The experience compares adenylate kinase in its unbound 4AKE structure and AP5A inhibitor-bound 1AKE structure. It matches 214 Cα residues and 1,656 common heavy atoms, keeping raw coordinate files, source URLs, retrieval times and SHA-256 hashes with the project."
+    },
+    {
+      "title": "Make the comparison tangible",
+      "text": "A custom instanced WebGL renderer lets you rotate atomic beads or a smooth Cα backbone, highlight the core, NMP region and lid, and overlay the endpoints. A residue ruler reports distances in both observed structures. Full study JSON and labeled PNG exports preserve the analysis context."
+    },
+    {
+      "title": "Let the reference frame be questioned",
+      "text": "A Horn quaternion fit aligns the structures using either 133 core Cα atoms or all 214 matched residues. Changing that selection recalculates the displacement plot and domain RMSDs, making alignment sensitivity visible rather than hiding it behind a single score."
+    },
+    {
+      "title": "Check the mathematics independently",
+      "text": "Ten core tests cover source integrity, coordinate derivation, rigid transforms, reflection rejection, correspondence and measurement invariance. An executed NumPy SVD comparison checked both real fits and 30 seeded transform cases. Desktop, emulated-phone, export and non-WebGL fallback workflows passed in a software-WebGL browser."
+    },
+    {
+      "title": "Keep the picture honest",
+      "text": "Intermediate slider frames are linear geometric interpolation, not a measured transition or molecular-dynamics trajectory. Atomic beads are a stylized display. The app does not compute a reaction mechanism, energies, rates or binding affinity. Physical-device and experimental validation are not claimed."
+    }
+  ],
+  "links": [
+    {
+      "label": "Open Conforma",
+      "url": "https://rp-conforma.vercel.app"
+    },
+    {
+      "label": "Source & checks",
+      "url": "https://github.com/rishitpradhan-gif/conforma"
+    },
+    {
+      "label": "Methods",
+      "url": "https://rp-conforma.vercel.app/methods.html"
+    }
+  ],
+  "liveUrl": "https://rp-conforma.vercel.app",
+  "status": "Working web application · independently checked numerical engine"
+},
+{
   "slug": "parallax",
   "name": "Parallax",
   "category": "Spacecraft perspectives",
