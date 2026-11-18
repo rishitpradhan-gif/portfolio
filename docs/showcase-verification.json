@@ -33,5 +33,6 @@
       "https://github.com/advisories/GHSA-mfr8-8qww-v76h",
       "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8"
     ]
-  }
+  },
+  "hosting": "Static Next.js export served from out/ with framework adapter disabled, clean URLs and trailing slashes. Initial Next.js adapter deployment failed because it looked for out/routes-manifest.json."
 }
