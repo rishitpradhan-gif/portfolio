@@ -1,0 +1,37 @@
+{
+  "verified_on": "2026-11-17",
+  "scope": "GitHub profile and flagship portfolio presentation",
+  "checks": {
+    "typescript": "passed",
+    "production_static_export": "passed",
+    "next_version": "16.4.6",
+    "github_markdown_render": "passed via GitHub Markdown API",
+    "profile_images": "all local references exist; header raster preview inspected",
+    "case_studies": [
+      "parallax",
+      "axon",
+      "titer"
+    ],
+    "npm_audit": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "verification_limits": [
+    "Fresh Chrome screenshots could not be captured: isolated Chrome launch timed out after 25 seconds. Existing genuine application screenshots were reused.",
+    "Computer-use connection exited unexpectedly; profile pin order could not be edited.",
+    "Account bio PATCH rejected due missing user scope. No account permissions were altered."
+  ],
+  "security_patch": {
+    "from": "16.4.4",
+    "to": "16.4.6",
+    "advisories": [
+      "https://github.com/advisories/GHSA-mfr8-8qww-v76h",
+      "https://github.com/advisories/GHSA-vc7v-qv4w-wrv8"
+    ]
+  }
+}

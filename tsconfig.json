@@ -37,6 +37,9 @@
   ],
   "exclude": [
     "node_modules",
-    "github-projects"
+    "github-projects",
+    "sites",
+    "vercel-deployments",
+    "research"
   ]
 }

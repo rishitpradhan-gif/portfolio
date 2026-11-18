@@ -14,7 +14,7 @@ export default function WorkSection({
     <section id="work" className="work-section real-projects">
       <div className="section-topline">
         <h2>Projects</h2>
-        <span className="micro">Worlds, signals & living patterns</span>
+        <span className="micro">Space, signals & scientific software</span>
       </div>
       <div className="real-project-list">
         {projects.map((project, index) => (
@@ -50,7 +50,7 @@ export default function WorkSection({
                   <ArrowRight size={15} />
                 </Link>
                 <button onClick={() => onSelect(index)}>
-                  Quick preview
+                  {project.liveUrl ? "Project overview" : "Quick preview"}
                   <ArrowUpRight size={13} />
                 </button>
               </div>
@@ -70,6 +70,14 @@ export default function WorkSection({
             </div>
           </article>
         ))}
+      </div>
+      <div className="supporting-work" aria-label="More open-source projects">
+        <span className="micro">More open-source work</span>
+        <div className="supporting-work-grid">
+          <a href="https://github.com/rishitpradhan-gif/sift" target="_blank" rel="noreferrer"><span>Data quality</span><h3>Sift <ArrowUpRight size={18}/></h3><p>CSV profiling, schema drift, and a streaming API.</p></a>
+          <a href="https://github.com/rishitpradhan-gif/trellis" target="_blank" rel="noreferrer"><span>Dependency graphs</span><h3>Trellis <ArrowUpRight size={18}/></h3><p>Critical paths, cycle witnesses, and delay impact.</p></a>
+          <a href="https://github.com/rishitpradhan-gif/canopy" target="_blank" rel="noreferrer"><span>Wearable-network research</span><h3>Canopy <ArrowUpRight size={18}/></h3><p>Replayable findings and adversarial synthetic evaluations.</p></a>
+        </div>
       </div>
     </section>
   );

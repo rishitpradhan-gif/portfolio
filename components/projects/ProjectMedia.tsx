@@ -17,6 +17,14 @@ export default function ProjectMedia({
     project.slug === "morphogenesis" ? "play" : "image",
   );
   const id = useId();
+  if (project.liveUrl) return (
+    <div className={`project-media media-${project.slug} media-live`}>
+      <a href={project.liveUrl} target="_blank" rel="noreferrer" aria-label={`Open ${project.name} application`}>
+        <figure className="project-photo"><img src={project.image} alt={project.imageAlt} width="1440" height="1000" loading="lazy" /><figcaption>{project.imageCaption}</figcaption></figure>
+        <span className="live-project-launch">Open {project.name}<span aria-hidden="true">↗</span></span>
+      </a>
+    </div>
+  );
   return (
     <div className={`project-media media-${project.slug}`}>
       <div

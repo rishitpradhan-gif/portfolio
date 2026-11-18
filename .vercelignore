@@ -12,3 +12,7 @@ AGENTS.md
 *.tsbuildinfo
 
 github-projects
+
+sites
+vercel-deployments
+research

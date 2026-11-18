@@ -80,7 +80,7 @@ export default async function ProjectPage({
               ))}
             </ul>
             <span className="micro case-note">
-              {project.example
+              {project.status ? project.status : project.example
                 ? "Built for this portfolio · Interactive experiment"
                 : "Project notes · In development"}
             </span>

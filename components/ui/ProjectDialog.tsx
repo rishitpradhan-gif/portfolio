@@ -5,6 +5,7 @@ import { ArrowUpRight, X } from "lucide-react";
 import { projects } from "@/data/projects";
 import WorldEnginePreview from "@/components/projects/WorldEnginePreview";
 import WearablePreview from "@/components/projects/WearablePreview";
+import ProjectMedia from "@/components/projects/ProjectMedia";
 import PatternLab from "@/components/projects/PatternLab";
 export default function ProjectDialog({
   index,
@@ -42,7 +43,9 @@ export default function ProjectDialog({
       {index !== null && (
         <>
           <div className="concrete-dialog-art">
-            {projects[index].slug === "morphogenesis" ? (
+            {projects[index].liveUrl ? (
+              <ProjectMedia project={projects[index]} paused={paused} />
+            ) : projects[index].slug === "morphogenesis" ? (
               <PatternLab paused={paused} />
             ) : projects[index].slug === "dreamit" ? (
               <WorldEnginePreview />
@@ -59,7 +62,7 @@ export default function ProjectDialog({
             </button>
           </div>
           <div className="dialog-copy">
-            <span className="micro">Interactive concept preview</span>
+            <span className="micro">{projects[index].liveUrl ? "Working application" : "Interactive concept preview"}</span>
             <h2 id="project-title">{projects[index].name}</h2>
             <p>{projects[index].detail}</p>
             <Link

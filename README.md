@@ -40,6 +40,14 @@ Next.js exports the static site to `out/`. Serve that directory with any static 
 - `data/` — project notes, media metadata, research context, and source links.
 - `scripts/` — browser verification and prototype-recording utilities.
 
+## Featured applications
+
+- **[Parallax](https://rp-parallax.vercel.app)** — first-person Earth rendering from real propagated satellite positions, dated NASA imagery, and reproducible pass planning. [Portfolio case study](https://rishitpradhan.com/projects/parallax/).
+- **[Axon](https://rp-axon.vercel.app)** — browser-local EEG inspection with calibrated import, Welch PSD, and executed numerical comparisons against SciPy. [Portfolio case study](https://rishitpradhan.com/projects/axon/).
+- **[Titer](https://rp-titer.vercel.app)** — assay endpoint normalization and experimental-context checks, plus a downloadable keyed local API. [Portfolio case study](https://rishitpradhan.com/projects/titer/).
+
+These are working web applications. Parallax’s iPhone download is source awaiting native validation; Axon is descriptive rather than clinical; Titer’s ratios do not establish biological equivalence.
+
 ## Standalone experiments
 
 The interactive work also has focused repositories with independent app shells, extracted models, tests, and implementation notes:
