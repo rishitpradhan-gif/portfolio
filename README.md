@@ -42,7 +42,7 @@ Next.js exports the static site to `out/`. Serve that directory with any static 
 
 ## Featured applications
 
-- **[Conforma](https://rp-conforma.vercel.app)** — an interactive comparison of two experimental protein structures, with custom molecular rendering, alignment sensitivity, endpoint measurements and independent numerical checks. [Portfolio case study](https://rishitpradhan.com/projects/conforma/).
+- **[Conforma](https://rp-conforma.vercel.app)** — search and visualize protein structures, construct sequence geometry, and save portable workspaces that reopen locally. [Why I built it](https://rp-conforma.vercel.app/#why) · [Portfolio case study](https://rishitpradhan.com/projects/conforma/).
 
 - **[Parallax](https://rp-parallax.vercel.app)** — first-person Earth rendering from real propagated satellite positions, dated NASA imagery, and reproducible pass planning. [Portfolio case study](https://rishitpradhan.com/projects/parallax/).
 - **[Axon](https://rp-axon.vercel.app)** — browser-local EEG inspection with calibrated import, Welch PSD, and executed numerical comparisons against SciPy. [Portfolio case study](https://rishitpradhan.com/projects/axon/).

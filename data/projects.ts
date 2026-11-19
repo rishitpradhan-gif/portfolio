@@ -24,42 +24,38 @@ export const projects: Project[] = [
   "slug": "conforma",
   "name": "Conforma",
   "category": "Interactive structural biology",
-  "summary": "One protein. Two shapes.",
-  "detail": "Turn a real molecular structure, compare two experimental conformations, and measure what changes. Conforma brings a reproducible structural comparison into an editorial, hands-on WebGL experience.",
-  "tech": "Protein structures · Rigid alignment · WebGL · Independent numerical checks",
+  "summary": "Open a protein. Keep the work.",
+  "detail": "A browser-based protein workspace: find public structures, open local coordinates, construct sequence geometry, inspect and measure atoms, and save a workspace you can reopen without an account.",
+  "tech": "PDB/mmCIF · WebGL · Sequence geometry · Portable workspaces",
   "color": "#cf946e",
   "kind": "pattern",
   "example": false,
   "image": "/images/conforma.webp",
-  "imageAlt": "Conforma working application: a real adenylate kinase structure rendered beside its editorial cover",
-  "imageCaption": "Actual Conforma application · published PDB coordinates, stylized atomic display",
+  "imageAlt": "Conforma protein workspace displaying real hemoglobin coordinates and molecular inspection controls",
+  "imageCaption": "Working protein workspace · real coordinates, local imports and portable exports",
   "focus": [
-    "Published experimental structures",
-    "Core-versus-whole-chain alignment",
-    "Reproducible endpoint measurements"
+    "Public and private coordinate imports",
+    "Local sequence construction",
+    "Reopenable workspaces with integrity checks"
   ],
   "story": [
-    {
-      "title": "Start with two real observations",
-      "text": "The experience compares adenylate kinase in its unbound 4AKE structure and AP5A inhibitor-bound 1AKE structure. It matches 214 Cα residues and 1,656 common heavy atoms, keeping raw coordinate files, source URLs, retrieval times and SHA-256 hashes with the project."
-    },
-    {
-      "title": "Make the comparison tangible",
-      "text": "A custom instanced WebGL renderer lets you rotate atomic beads or a smooth Cα backbone, highlight the core, NMP region and lid, and overlay the endpoints. A residue ruler reports distances in both observed structures. Full study JSON and labeled PNG exports preserve the analysis context."
-    },
-    {
-      "title": "Let the reference frame be questioned",
-      "text": "A Horn quaternion fit aligns the structures using either 133 core Cα atoms or all 214 matched residues. Changing that selection recalculates the displacement plot and domain RMSDs, making alignment sensitivity visible rather than hiding it behind a single score."
-    },
-    {
-      "title": "Check the mathematics independently",
-      "text": "Ten core tests cover source integrity, coordinate derivation, rigid transforms, reflection rejection, correspondence and measurement invariance. An executed NumPy SVD comparison checked both real fits and 30 seeded transform cases. Desktop, emulated-phone, export and non-WebGL fallback workflows passed in a software-WebGL browser."
-    },
-    {
-      "title": "Keep the picture honest",
-      "text": "Intermediate slider frames are linear geometric interpolation, not a measured transition or molecular-dynamics trajectory. Atomic beads are a stylized display. The app does not compute a reaction mechanism, energies, rates or binding affinity. Physical-device and experimental validation are not claimed."
-    }
-  ],
+  {
+    "title": "Why I\u2019m building this",
+    "text": "I\u2019m a chemical biology student at UC Berkeley. I want people to be able to bring their own question to a protein, inspect its coordinates and leave with something they can reuse. Conforma makes that intent practical: local files stay on the device, methods are open, and workspaces can be saved without an account."
+  },
+  {
+    "title": "From a sequence or structure to useful work",
+    "text": "Search RCSB PDB by name or ID, open a local PDB/mmCIF file, select chains, inspect residues and measure atom distances. Export original coordinates, a labeled image or modeled-residue FASTA. The sequence builder constructs idealized geometry from chosen backbone torsions and optional CCD side-chain templates; it does not predict a native fold."
+  },
+  {
+    "title": "Save work that actually reopens",
+    "text": "Version 2 workspace records embed coordinate text and view settings. Reopening checks SHA-256, reparses source coordinates and ignores saved parsed atoms and claimed source URLs. Constructed models are rebuilt from a recipe and must reproduce the saved PDB. The hash checks integrity, not scientific validity or authenticated provenance."
+  },
+  {
+    "title": "Keep the original evidence workbench",
+    "text": "The original adenylate kinase comparison remains available as a separate study. Its Horn quaternion fitting engine was checked against NumPy SVD on both real fits and 30 seeded transforms. The project also includes parser, geometry and portable-record tests, plus browser checks with software WebGL and an emulated phone. No physical-device or experimental validation is claimed."
+  }
+],
   "links": [
     {
       "label": "Open Conforma",
@@ -75,7 +71,7 @@ export const projects: Project[] = [
     }
   ],
   "liveUrl": "https://rp-conforma.vercel.app",
-  "status": "Working web application · independently checked numerical engine"
+  "status": "Protein workspace · local processing · reproducible exports"
 },
 {
   "slug": "parallax",
